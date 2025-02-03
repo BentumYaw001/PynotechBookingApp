@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import ScreenOneImage from "/src/assets/images/screenone.png";
+
 function ScreenOne() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="ScreenOne">
@@ -10,7 +13,7 @@ function ScreenOne() {
             <span>.</span> <p>.</p>
             <p>.</p>
           </div>
-          <button>Next</button>
+          <button onClick={() => navigate("/second-screen")}>Next</button>
         </div>
       </div>
     </>
