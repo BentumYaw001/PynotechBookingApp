@@ -6,5 +6,83 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: black;
+  background-color: gold;
 }
+/* Splash screen starts here. */
+.Splash {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  justify-content: center;
+  background-color: hsl(174, 100%, 29%);
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 2s ease-out;
+}
+
+.Splash.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Splash img {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+
+/* Splash screen ends here */
+
+/* ScreenOne Starts here */
+.ScreenOne {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.ScreenOne img {
+  width: 80%;
+}
+
+span {
+  color: hsl(174, 100%, 29%);
+}
+.Dots {
+  display: flex;
+  font-size: 4rem;
+  margin: 20px 0px;
+  color: hsl(0, 0%, 50%, 0.5);
+}
+.ScreenOne h4 {
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: hsl(174, 100%, 29%);
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* ScreenOne ends here */
