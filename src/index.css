@@ -3,6 +3,7 @@
 }
 
 .App {
+  min-width: 280px;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -86,3 +87,159 @@ button {
   cursor: pointer;
 }
 /* ScreenOne ends here */
+
+/* SignUp starts here */
+.SignUp {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.SignUp p {
+  color: hsl(174, 100%, 29%);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.Phone {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.Phone #prefix {
+  flex-basis: 30%;
+  width: 100%;
+}
+
+.Phone #suffix {
+  flex-basis: 70%;
+  width: 100%;
+}
+
+.Icons {
+  background-color: hsl(174, 100%, 29%, 0.2);
+  display: flex;
+  overflow: hidden;
+  padding: 2px;
+  align-items: center;
+  border-radius: 10px;
+  gap: 5px;
+  position: relative;
+}
+
+.Icons img {
+  margin-left: 10px;
+}
+.ArrowDown {
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  right: 15px;
+}
+input {
+  border: none;
+  outline: none;
+  height: 100%;
+  background-color: initial;
+  padding: 10px;
+  color: hsl(174, 100%, 29%);
+}
+
+#Password {
+  font-size: 0.9rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  gap: 10px;
+}
+/* SignUp ends here */
+
+/* Sign In starts here */
+.SignIn {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 50px;
+  width: 100%;
+}
+.Welcome {
+  background-color: hsl(174, 100%, 29%);
+  padding: 20px;
+  color: white;
+  height: 25%;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.Welcome h2 {
+  margin: 10px 0px;
+}
+
+.Entry img {
+  height: 20px;
+  width: 20px;
+}
+.Entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  gap: 20px;
+}
+.Entry button {
+  width: 100%;
+}
+.EyeLogin {
+  position: absolute;
+  right: 10px;
+}
+.Entry .Icons {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.Entry input {
+  color: black;
+}
+
+.ForgotPassword {
+  display: flex;
+  font-size: 0.85rem;
+  margin-top: -10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.Remember {
+  display: flex;
+  align-items: center;
+}
+#CheckBox {
+  accent-color: hsl(174, 100%, 29%);
+  margin-right: 10px;
+}
+
+.SignIn button {
+  margin: 30px 0px;
+}
+/* Sign In ends here */
+
+@media (min-width: 350px) {
+  .Prefix {
+    flex-basis: 40%;
+  }
+}

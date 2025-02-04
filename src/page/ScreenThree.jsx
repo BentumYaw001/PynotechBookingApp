@@ -13,7 +13,9 @@ function ScreenThree() {
             <p>.</p>
             <span>.</span>
           </div>
-          <button onClick={() => navigate("/third-screen")}>Get Started</button>
+          <button onClick={() => navigate("/signup-screen")}>
+            Get Started
+          </button>
         </div>
       </div>
     </>
