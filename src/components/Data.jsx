@@ -1,5 +1,9 @@
 import email from "/src/assets/images/email-fill.svg";
 import user from "/src/assets/images/person.svg";
+import manicure from "/src/assets/images/manicure.svg";
+import haircut from "/src/assets/images/haircut.svg";
+import makeUp from "/src/assets/images/brush.svg";
+import spa from "/src/assets/images/tub.svg";
 
 export const SignUpData = [
   {
@@ -33,5 +37,24 @@ export const SignUpData = [
     type: "password",
     id: "Password",
     name: "password",
+  },
+];
+
+export const ServicesData = [
+  {
+    img: haircut,
+    name: "Haircut",
+  },
+  {
+    img: makeUp,
+    name: "Make up",
+  },
+  {
+    img: manicure,
+    name: "Manicure",
+  },
+  {
+    img: spa,
+    name: "Spa",
   },
 ];

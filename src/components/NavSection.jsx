@@ -23,7 +23,7 @@ function NavSection() {
         <div className="Search">
           <img src={search} alt="search" />
           <input type="search" name="" id="" placeholder="search" />
-          <img src={filter} alt="filter" />
+          <img src={filter} alt="filter" className="Filter" />
         </div>
       </div>
     </>
