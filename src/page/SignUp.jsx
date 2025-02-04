@@ -8,7 +8,7 @@ function SignUp() {
   return (
     <>
       <div className="SignUp">
-        <p onClick={() => navigate("/signin-screen")}>Create an account</p>
+        <p>Create an account</p>
         <form action="">
           {SignUpData.map((item, index) => {
             return (
@@ -61,6 +61,12 @@ function SignUp() {
           })}
         </form>
         <button onClick={() => navigate("/home-screen")}>SIGN UP</button>
+        <div className="LoginRedirect">
+          <p>
+            Already have an account?{" "}
+            <span onClick={() => navigate("/signin-screen")}>Login</span>
+          </p>
+        </div>
       </div>
     </>
   );

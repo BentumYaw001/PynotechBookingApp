@@ -38,7 +38,7 @@ function SignIn() {
           <button onClick={() => navigate("/home-screen")}>LOGIN</button>
           <div className="CreateAccount">
             <p>
-              Don't have an account?{" "}
+              Don't have an account?
               <span onClick={() => navigate("/signup-screen")}> signup</span>
             </p>
           </div>
