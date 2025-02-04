@@ -86,3 +86,32 @@ export const TopSpecialist = [
     tag: "Style Pro",
   },
 ];
+
+import bookings from "/src/assets/images/bookings.svg";
+import chat from "/src/assets/images/chat.svg";
+import home from "/src/assets/images/home.svg";
+import location from "/src/assets/images/location.svg";
+
+import person from "/src/assets/images/person-nofill.svg";
+export const FooterData = [
+  {
+    img: home,
+    name: "Home",
+  },
+  {
+    img: location,
+    name: "Explore",
+  },
+  {
+    img: bookings,
+    name: "Bookings",
+  },
+  {
+    img: chat,
+    name: "Chat",
+  },
+  {
+    img: person,
+    name: "Profile",
+  },
+];
