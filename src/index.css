@@ -55,8 +55,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
+}
+
+.Contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  border-top: 1px solid hsl(0, 0%, 50%, 0.3);
 }
 .ScreenOne img {
   width: 80%;
@@ -263,6 +273,8 @@ span {
 /* Home page starts here */
 .HomePage {
   height: 100vh;
+  overflow: scroll;
+  scrollbar-width: none;
   width: 100%;
   background-color: white;
 }
@@ -319,7 +331,7 @@ span {
 }
 .Offers img {
   width: 100%;
-  margin-top: -35px;
+  margin-top: -45px;
 }
 
 .Services {
@@ -340,15 +352,97 @@ span {
   grid-template-columns: repeat(4, 1fr);
   min-width: 70%;
   max-width: 80%;
-  margin: 15px auto;
-  border-bottom: 1px solid hsl(0, 0%, 50%, 0.5);
-  padding-bottom: 25px;
+  margin: 10px auto;
+
+  padding-bottom: 15px;
 }
 .ServiceCatalogue {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.Specialist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: 15px;
+}
+
+.SpecialistGrid {
+  width: 90%;
+}
+.TopSpecialist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 0.8rem;
+  margin: 20px 0px;
+  gap: 15px;
+}
+
+.Tag {
+  color: gray;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.SpecialistId {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Salon {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.Salon h4 {
+  font-size: 0.9rem;
+}
+
+.SalonImg {
+  width: 80px;
+  height: 80px;
+}
+
+.Star {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.Star img {
+  width: 15px;
+  height: 15px;
+  margin-top: -3px;
+}
+
+.Bookings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 5px;
+}
+.BookNow {
+  color: white;
+  background-color: hsl(174, 100%, 29%);
+  padding: 5px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
 /* end of the MainBody  section in the home page */
 
 /* Home page ends here */

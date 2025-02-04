@@ -1,9 +1,6 @@
 import email from "/src/assets/images/email-fill.svg";
 import user from "/src/assets/images/person.svg";
 import manicure from "/src/assets/images/manicure.svg";
-import haircut from "/src/assets/images/haircut.svg";
-import makeUp from "/src/assets/images/brush.svg";
-import spa from "/src/assets/images/tub.svg";
 
 export const SignUpData = [
   {
@@ -40,6 +37,9 @@ export const SignUpData = [
   },
 ];
 
+import haircut from "/src/assets/images/haircut.svg";
+import makeUp from "/src/assets/images/brush.svg";
+import spa from "/src/assets/images/tub.svg";
 export const ServicesData = [
   {
     img: haircut,
@@ -56,5 +56,33 @@ export const ServicesData = [
   {
     img: spa,
     name: "Spa",
+  },
+];
+
+import Lily from "/src/assets/images/p1.svg";
+import Jayden from "/src/assets/images/p2.svg";
+import Alex from "/src/assets/images/p3.svg";
+import Ava from "/src/assets/images/p4.svg";
+
+export const TopSpecialist = [
+  {
+    img: Lily,
+    name: "Lily",
+    tag: "Color Queen",
+  },
+  {
+    img: Jayden,
+    name: "Jayden",
+    tag: "Shave Guru",
+  },
+  {
+    img: Alex,
+    name: "Alex",
+    tag: "Hair Expert",
+  },
+  {
+    img: Ava,
+    name: "Ava",
+    tag: "Style Pro",
   },
 ];
