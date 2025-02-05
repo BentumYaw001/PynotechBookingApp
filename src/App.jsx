@@ -1,14 +1,8 @@
 import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import SplashScreen from "./page/SplashScreen";
 import { useSplashStore } from "./page/Store";
-import ScreenOne from "./page/ScreenOne";
-import ScreenTwo from "./page/ScreenTwo";
-import ScreenThree from "./page/ScreenThree";
-import SignUp from "./page/SignUp";
-import SignIn from "./page/SignIn";
-import HomePage from "./page/HomePage";
-import Profile from "./page/Profile";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   const { loading, setLoading } = useSplashStore();
@@ -23,21 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
-        {loading ? (
-          <SplashScreen />
-        ) : (
-          <Routes>
-            <Route path="/" element={<ScreenOne />} />
-            <Route path="/second-screen" element={<ScreenTwo />} />
-            <Route path="/third-screen" element={<ScreenThree />} />
-            <Route path="/signup-screen" element={<SignUp />} />
-            <Route path="/signin-screen" element={<SignIn />} />
-            <Route path="/home-screen" element={<HomePage />} />
-            <Route path="/profile-screen" element={<Profile />} />
-          </Routes>
-        )}
-      </Router>
+      <Router>{loading ? <SplashScreen /> : <AnimatedRoutes />}</Router>
     </div>
   );
 }
