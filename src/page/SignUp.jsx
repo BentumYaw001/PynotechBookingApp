@@ -9,7 +9,12 @@ function SignUp() {
     <>
       <div className="SignUp">
         <p>Create an account</p>
-        <form action="">
+        <form
+          action=""
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+        >
           {SignUpData.map((item, index) => {
             return (
               <>

@@ -13,7 +13,12 @@ function SignIn() {
           <h2>Welcome Back!</h2>
           <p>log in to continue</p>
         </div>
-        <form className="Entry">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+          className="Entry"
+        >
           <div className="Icons ">
             <img src={emailNonFill} alt="" />
             <input type="email" name="email" id="" placeholder="email" />
