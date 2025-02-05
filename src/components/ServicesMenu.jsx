@@ -9,7 +9,7 @@ function ServicesMenu() {
               <>
                 <div className="ServiceCatalogue">
                   <div className="Services">
-                    <img src={item.img} alt={item.name} loading="lazy" />
+                    <img src={item.img} alt={item.name} />
                   </div>
                   <p>{item.name}</p>
                 </div>

@@ -7,7 +7,7 @@ function ScreenOne() {
     <>
       <div className="ScreenOne">
         <div className="Content">
-          <img src={ScreenOneImage} alt="" loading="lazy" />
+          <img src={ScreenOneImage} alt="" />
           <h4>Discover Beauty Services Near You!</h4>
           <div className="Dots">
             <span>.</span> <p>.</p>

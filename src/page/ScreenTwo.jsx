@@ -6,7 +6,7 @@ function ScreenTwo() {
     <>
       <div className="ScreenOne">
         <div className="Content">
-          <img src={ScreenTwoImage} alt="" loading="lazy" />
+          <img src={ScreenTwoImage} alt="" />
           <h4>Book Anytime, AnyWhere.</h4>
           <div className="Dots">
             <p>.</p>

@@ -114,3 +114,45 @@ export const FooterData = [
     name: "Profile",
   },
 ];
+
+import ScreenOne from "/src/page/ScreenOne.jsx";
+import ScreenTwo from "/src/page/ScreenTwo.jsx";
+import ScreenThree from "/src/page/ScreenThree.jsx";
+import SignUp from "/src/page/SignUp.jsx";
+import SignIn from "/src/page/SignIn";
+import HomePage from "/src/page/HomePage";
+import Profile from "/src/page/Profile";
+
+export const RouteData = [
+  {
+    path: "/",
+    page: <ScreenOne />,
+  },
+  {
+    path: "/second-screen",
+    page: <ScreenTwo />,
+  },
+  {
+    path: "/third-screen",
+    page: <ScreenThree />,
+  },
+
+  {
+    path: "/signup-screen",
+    page: <SignUp />,
+  },
+
+  {
+    path: "/signin-screen",
+    page: <SignIn />,
+  },
+
+  {
+    path: "/home-screen",
+    page: <HomePage />,
+  },
+  {
+    path: "/profile-screen",
+    page: <Profile />,
+  },
+];

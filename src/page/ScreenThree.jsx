@@ -6,7 +6,7 @@ function ScreenThree() {
     <>
       <div className="ScreenOne">
         <div className="Content">
-          <img src={ScreenThreeImage} alt="" loading="lazy" />
+          <img src={ScreenThreeImage} alt="" />
           <h4>Relax, We`ve Got You Covered!</h4>
           <div className="Dots">
             <p>.</p>

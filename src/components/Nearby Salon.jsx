@@ -15,7 +15,6 @@ function NearbySalon() {
             src={salon}
             alt="near by salon"
             className="SalonImg"
-            loading="lazy"
           />
           <div>
             <h4>Yanks Spa and Salon</h4>

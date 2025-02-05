@@ -14,7 +14,7 @@ function TopSpecialistSection() {
               return (
                 <>
                   <div className="SpecialistId">
-                    <img src={item.img} alt={item.name} loading="lazy" />
+                    <img src={item.img} alt={item.name} />
                     <p>{item.name}</p>
                     <p className="Tag">{item.tag}</p>
                   </div>
