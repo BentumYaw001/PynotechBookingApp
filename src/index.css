@@ -324,6 +324,7 @@ span {
 .MainBody {
   width: 100%;
   align-self: center;
+  margin-bottom: 100px;
 }
 
 .Offers {
@@ -445,6 +446,32 @@ span {
 }
 
 /* end of the MainBody  section in the home page */
+
+/* footer section starts here */
+footer {
+  border-top: 1px solid hsl(0, 0%, 50%, 0.3);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  text-align: center;
+  padding: 20px 5px;
+  font-size: 0.9rem;
+}
+
+.FooterMenu img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.FooterMenu p {
+  font-size: 0.6rem;
+}
+/* footer section ends here */
 
 /* Home page ends here */
 

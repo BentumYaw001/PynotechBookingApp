@@ -1,8 +1,19 @@
+import { FooterData } from "./Data";
+
 function Footer() {
   return (
     <>
       <footer>
-        <img src="" alt="footer image" />
+        {FooterData.map((item) => {
+          return (
+            <>
+              <div className="FooterMenu">
+                <img src={item.img} alt={item.name} />
+                <p>{item.name}</p>
+              </div>
+            </>
+          );
+        })}
       </footer>
     </>
   );

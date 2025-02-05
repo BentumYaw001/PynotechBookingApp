@@ -1,4 +1,3 @@
-import { ServicesData } from "./Data";
 import offers from "/src/assets/images/offers.svg";
 import ServicesMenu from "/src/components/ServicesMenu.jsx";
 import Content from "/src/components/Content.jsx";

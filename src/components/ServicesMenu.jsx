@@ -2,7 +2,7 @@ import { ServicesData } from "./Data";
 function ServicesMenu() {
   return (
     <>
-      <div className="MainBody">
+      <div className="">
         <div className="ServicesMenu">
           {ServicesData.map((item) => {
             return (
