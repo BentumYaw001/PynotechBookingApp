@@ -273,7 +273,8 @@ span {
 /* Home page starts here */
 .HomePage {
   height: 100vh;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   scrollbar-width: none;
   width: 100%;
   background-color: white;
