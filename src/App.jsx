@@ -8,6 +8,7 @@ import ScreenThree from "./page/ScreenThree";
 import SignUp from "./page/SignUp";
 import SignIn from "./page/SignIn";
 import HomePage from "./page/HomePage";
+import Profile from "./page/Profile";
 
 function App() {
   const { loading, setLoading } = useSplashStore();
@@ -33,6 +34,7 @@ function App() {
             <Route path="/signup-screen" element={<SignUp />} />
             <Route path="/signin-screen" element={<SignIn />} />
             <Route path="/home-screen" element={<HomePage />} />
+            <Route path="/profile-screen" element={<Profile />} />
           </Routes>
         )}
       </Router>

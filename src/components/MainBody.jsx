@@ -6,7 +6,7 @@ function Mainbody() {
     <>
       <div className="MainBody">
         <div className="Offers">
-          <img src={offers} alt="offers" />
+          <img src={offers} alt="offers" loading="lazy" />
         </div>
         <ServicesMenu />
         <Content />

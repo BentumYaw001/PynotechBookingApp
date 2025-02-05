@@ -476,6 +476,40 @@ footer {
 
 /* Home page ends here */
 
+/* Profile page starts here */
+.Profile {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Profile page ends here */
+
+/* slider effect */
+/* Add this CSS to your global styles or component styles */
+
+.slide-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 10000ms ease, opacity 10000ms ease;
+}
+
+.slide-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 10000ms ease, opacity 10000ms ease;
+}
+
 @media (min-width: 350px) {
   .Prefix {
     flex-basis: 40%;

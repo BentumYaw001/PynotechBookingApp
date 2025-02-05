@@ -4,7 +4,7 @@ function SplashScreen() {
   return (
     <>
       <div className="Splash">
-        <img src={yb} alt="" />
+        <img src={yb} alt="" loading="lazy" />
         <h1>EasyBook</h1>
       </div>
     </>
