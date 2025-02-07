@@ -122,7 +122,7 @@ import SignUp from "/src/page/SignUp.jsx";
 import SignIn from "/src/page/SignIn";
 import HomePage from "/src/page/HomePage";
 import Profile from "/src/page/Profile";
-
+import EditProfile from "/src/page/EditProfile.jsx";
 export const RouteData = [
   {
     path: "/",
@@ -154,5 +154,43 @@ export const RouteData = [
   {
     path: "/profile-screen",
     page: <Profile />,
+  },
+  {
+    path: "/editProfile-screen",
+    page: <EditProfile />,
+  },
+];
+
+import LogoutArrow from "/src/assets/images/LogoutArrow.svg";
+import History from "/src/assets/images/history.svg";
+import Payment from "/src/assets/images/minus-circle.svg";
+import Phone from "/src/assets/images/phone.svg";
+
+import Home from "/src/assets/images/home.svg";
+export const ProfileMenuData = [
+  {
+    name: "Home",
+    img: Home,
+    route: "/home-screen",
+  },
+  {
+    name: "Preferences",
+    img: Phone,
+    route: "",
+  },
+  {
+    name: "Payment methods",
+    img: Payment,
+    route: "",
+  },
+  {
+    name: "Appointment history",
+    img: History,
+    route: "",
+  },
+  {
+    name: " Log out",
+    img: LogoutArrow,
+    route: "/signin-screen",
   },
 ];

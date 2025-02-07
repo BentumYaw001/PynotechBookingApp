@@ -25,7 +25,6 @@ function SignUp() {
                       <div className="Phone">
                         <div className="Icons Prefix">
                           <img src={flag} alt="" />
-                          <img src={angledDown} alt="" className="ArrowDown" />
                           <input
                             type="number"
                             name="prefix"
@@ -33,6 +32,7 @@ function SignUp() {
                             placeholder="+233"
                             readOnly
                           />
+                          <img src={angledDown} alt="" className="ArrowDown" />
                         </div>
 
                         <div className="Icons Suffix">
@@ -64,8 +64,8 @@ function SignUp() {
               </>
             );
           })}
+          <button onClick={() => navigate("/home-screen")}>SIGN UP</button>
         </form>
-        <button onClick={() => navigate("/home-screen")}>SIGN UP</button>
         <div className="LoginRedirect">
           <p>
             Already have an account?{" "}

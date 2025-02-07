@@ -9,18 +9,17 @@ function Footer() {
         {FooterData.map((item, index) => {
           return (
             <>
-              <div className="FooterMenu">
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  onClick={() => {
+              <div
+                className="FooterMenu"
+                onClick={() => {
+                  {
                     {
-                      {
-                        index === 4 ? navigate("/profile-screen") : "";
-                      }
+                      index === 4 ? navigate("/profile-screen") : "";
                     }
-                  }}
-                />
+                  }
+                }}
+              >
+                <img src={item.img} alt={item.name} />
                 <p>{item.name}</p>
               </div>
             </>

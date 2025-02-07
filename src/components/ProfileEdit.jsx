@@ -1,11 +1,23 @@
+import ProfilePic from "/src/assets/images/specialist/profilepicture.png";
+import { useNavigate } from "react-router-dom";
+
 function ProfileEdit() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="EditSection">
-        <h5>Profile</h5>
-        <img src="" alt="" />
+        <div>Profile</div>
+
+        <img src={ProfilePic} alt="" />
+        <h4>Bentum Yaw Richmond</h4>
+        <p>@BigBen</p>
         <p></p>
-        <div className="BookNow">Edit Profile</div>
+        <div
+          className="BookNow"
+          onClick={() => navigate("/editProfile-screen")}
+        >
+          Edit Profile
+        </div>
       </div>
     </>
   );
