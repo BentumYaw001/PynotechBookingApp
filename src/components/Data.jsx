@@ -159,15 +159,18 @@ export const RouteData = [
     path: "/editProfile-screen",
     page: <EditProfile />,
   },
+  {
+    path: "/booknow-screen",
+    page: <BookNowPage />,
+  },
 ];
 
 import LogoutArrow from "/src/assets/images/LogoutArrow.svg";
 import History from "/src/assets/images/history.svg";
 import Payment from "/src/assets/images/minus-circle.svg";
 import Phone from "/src/assets/images/phone.svg";
-
 import Home from "/src/assets/images/home.svg";
-import { label } from "framer-motion/client";
+import BookNowPage from "../page/BookNow";
 export const ProfileMenuData = [
   {
     name: "Home",
