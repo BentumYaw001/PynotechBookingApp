@@ -1,14 +1,17 @@
-import ProfilePic from "/src/assets/images/specialist/profilepicture.png";
 import { useNavigate } from "react-router-dom";
+import { UseProfileStore } from "../page/Store";
 
 function ProfileEdit() {
   const navigate = useNavigate();
+  const { ProfileImage } = UseProfileStore();
   return (
     <>
       <div className="EditSection">
         <div>Profile</div>
 
-        <img src={ProfilePic} alt="" />
+        <div className="ProfilePicture">
+          <img src={ProfileImage} alt="" />
+        </div>
         <h4>Bentum Yaw Richmond</h4>
         <p>@BigBen</p>
         <p></p>

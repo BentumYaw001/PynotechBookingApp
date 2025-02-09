@@ -1,5 +1,13 @@
+import PictureUpload from "../components/PictureUpload";
+import ProfileDetails from "../components/ProfileDetails";
+
 function EditProfile() {
-  return <>hi edit profile screen</>;
+  return (
+    <>
+      <PictureUpload />
+      <ProfileDetails />
+    </>
+  );
 }
 
 export default EditProfile;

@@ -167,6 +167,7 @@ import Payment from "/src/assets/images/minus-circle.svg";
 import Phone from "/src/assets/images/phone.svg";
 
 import Home from "/src/assets/images/home.svg";
+import { label } from "framer-motion/client";
 export const ProfileMenuData = [
   {
     name: "Home",
@@ -192,5 +193,28 @@ export const ProfileMenuData = [
     name: " Log out",
     img: LogoutArrow,
     route: "/signin-screen",
+  },
+];
+
+export const UserData = [
+  {
+    label: "Full Name",
+    type: "text",
+    entry: "Bentum Yaw Richmond",
+  },
+  {
+    label: "Email",
+    type: "email",
+    entry: "richmondbentum2020@gmail.com",
+  },
+  {
+    label: "Username",
+    type: "text",
+    entry: "BigBen",
+  },
+  {
+    label: "Password",
+    type: "password",
+    entry: "Bentum Yaw Richmond",
   },
 ];
