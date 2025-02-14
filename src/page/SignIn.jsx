@@ -21,15 +21,22 @@ function SignIn() {
         >
           <div className="Icons ">
             <img src={emailNonFill} alt="" />
-            <input type="email" name="email" id="" placeholder="email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email"
+              required
+            />
           </div>
           <div className="Icons ">
             <img src={password} alt="" />
             <input
               type="password"
               name="passwords"
-              id=""
+              id="password"
               placeholder="password"
+              required
             />
             <img src={closedEye} alt="" className="EyeLogin" />
           </div>
@@ -40,7 +47,9 @@ function SignIn() {
             </div>
             <p>forgot password?</p>
           </div>
-          <button onClick={() => navigate("/home-screen")}>LOGIN</button>
+          <button type="submit" onClick={() => navigate("/home-screen")}>
+            LOGIN
+          </button>
           <div className="CreateAccount">
             <p>
               Don't have an account?
