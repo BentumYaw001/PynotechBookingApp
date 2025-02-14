@@ -6,7 +6,7 @@ import filter from "/src/assets/images/Vector2.svg";
 import { useCurrentTimeStore } from "../page/Store";
 
 function NavSection() {
-  const { greeting, city, town, country, updateTime } = useCurrentTimeStore();
+  const { greeting, city, country, updateTime } = useCurrentTimeStore();
 
   useEffect(() => {
     updateTime();
@@ -19,9 +19,9 @@ function NavSection() {
             <p>location</p>
             <div className="LocaleSpot">
               <img src={Location} alt="location" />
-              {city && country && town ? (
+              {city && country ? (
                 <p>
-                  {town}, {city}, {country}.
+                  {city}, {country}.
                 </p>
               ) : (
                 <p>Fetching location...</p>
