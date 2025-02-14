@@ -42,11 +42,11 @@ export const useCurrentTimeStore = create((set) => ({
 
           const hours = parseInt(localTime.split(":")[0]);
 
-          let greeting = "Evening";
+          let greeting = "Good Evening,";
           if (hours < 12) {
-            greeting = "Morning";
+            greeting = "Good Morning,";
           } else if (hours < 15) {
-            greeting = "Afternoon";
+            greeting = "Good Afternoon,";
           }
 
           set({ hours, greeting, town, city, country });

@@ -31,7 +31,7 @@ function NavSection() {
           <img src={notification} alt="notification" />
         </div>
         <div className="Greatings">
-          <h4>{greeting}, Bentum</h4>
+          <h4>{greeting} Bentum</h4>
         </div>
         <div className="Search">
           <img src={search} alt="search" />
