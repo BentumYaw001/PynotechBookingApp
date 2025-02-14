@@ -1,11 +1,16 @@
-import location from "/src/assets/images/location.svg";
+import Location from "/src/assets/images/location.svg";
+import { useEffect } from "react";
 import notification from "/src/assets/images/bell.svg";
 import search from "/src/assets/images/search.svg";
 import filter from "/src/assets/images/Vector2.svg";
 import { useCurrentTimeStore } from "../page/Store";
 
 function NavSection() {
-  const { greeting } = useCurrentTimeStore();
+  const { greeting, city, country, updateTime } = useCurrentTimeStore();
+
+  useEffect(() => {
+    updateTime();
+  }, []);
   return (
     <>
       <div className="NavSection">
@@ -13,8 +18,14 @@ function NavSection() {
           <div>
             <p>location</p>
             <div className="LocaleSpot">
-              <img src={location} alt="location" />
-              <h5>Kumasi,Ghana</h5>
+              <img src={Location} alt="location" />
+              {city && country ? (
+                <p>
+                  {city}, {country}.
+                </p>
+              ) : (
+                <p>Fetching location...</p>
+              )}
             </div>
           </div>
           <img src={notification} alt="notification" />
