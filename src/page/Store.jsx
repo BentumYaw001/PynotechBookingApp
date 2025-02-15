@@ -64,3 +64,8 @@ export const useCurrentTimeStore = create((set) => ({
 setInterval(() => {
   useCurrentTimeStore.getState().updateTime();
 }, 10000);
+
+export const useSpaStore = create((set) => ({
+  activeComponent: "A",
+  setActiveComponent: (id) => set({ activeComponent: id }),
+}));

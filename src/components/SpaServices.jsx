@@ -1,39 +1,37 @@
-import { SpaList, SpaNavItem } from "./Data";
+import { SpaNavItem } from "./Data";
+import { useSpaStore } from "../page/Store";
 
 function SpaServices() {
-  return (
-    <>
-      <div className="SpaServices">
-        <div className="SpaNav">
-          {SpaNavItem.map((item) => {
-            return (
-              <>
-                <p>{item.name}</p>
-              </>
-            );
-          })}
-        </div>
-        <div>
-          <h4>
-            Services <span>(12)</span>
-          </h4>
-          <div>
-            {SpaList.map((item) => {
-              return (
-                <>
-                  <div className="ServicesItem">
-                    <p>{item.style}</p>
-                    <h5>{item.type}</h5>
-                  </div>
-                </>
-              );
-            })}
-          </div>
-        </div>
+  const { activeComponent, setActiveComponent } = useSpaStore();
 
-        <div className="BookNow Appointment">Book Appointment</div>
+  return (
+    <div className="SpaServices">
+      <div className="SpaNav">
+        {SpaNavItem.map((item) => (
+          <p
+            key={item.id}
+            onClick={() => setActiveComponent(item.id)}
+            className="nav-link"
+            style={{
+              fontWeight: activeComponent === item.id ? "bold" : "normal",
+              color: activeComponent === item.id ? " hsl(174, 100%, 29%)" : "",
+            }}
+          >
+            {item.name}
+          </p>
+        ))}
       </div>
-    </>
+
+      <div>
+        {SpaNavItem.map((item) =>
+          item.id === activeComponent ? (
+            <div key={item.id}>{item.path}</div>
+          ) : null
+        )}
+      </div>
+
+      <div className="BookNow Appointment">Book Appointment</div>
+    </div>
   );
 }
 

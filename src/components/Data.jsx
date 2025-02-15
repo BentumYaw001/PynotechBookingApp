@@ -266,25 +266,24 @@ export const SpaList = [
   },
 ];
 
+import ServicesItem from "./ServicesItem";
+import SpecialistItem from "./SpecialistItem";
+import PackagesItem from "./PackageItem";
+import GalleryItem from "./GalleryItem";
+import ReviewItem from "./ReviewItem";
+
 export const SpaNavItem = [
+  { id: "A", name: "Services", path: <ServicesItem /> },
   {
-    name: "Services",
-    route: "",
-  },
-  {
+    id: "B",
     name: "Specialist",
-    route: "",
+    path: <SpecialistItem />,
   },
+  { id: "C", name: "Package", path: <PackagesItem /> },
+  { id: "D", name: "Gallery", path: <GalleryItem /> },
   {
-    name: "Package",
-    route: "",
-  },
-  {
-    name: "Gallery",
-    route: "",
-  },
-  {
+    id: "E",
     name: "Review",
-    route: "",
+    path: <ReviewItem />,
   },
 ];
