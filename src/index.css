@@ -764,6 +764,43 @@ footer {
   transform-origin: left;
 }
 
+.BrandPersonnel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.SpecialPersonnel {
+  width: clamp(100px, 135px, 200px);
+  margin-top: 10px;
+}
+.SpecialistDetails {
+  position: relative;
+}
+.SpecialistRate {
+  background-color: white;
+  justify-content: center;
+  width: 50px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+}
+
+.Gallery {
+  columns: 3;
+  width: 100%;
+  gap: 0px;
+  padding: 10px;
+  align-items: center;
+}
+
+.Gallery img {
+  height: clamp(60px, 85px, 100px);
+  width: clamp(60px, 85px, 100px);
+}
 /* book now page ends here */
 
 @media (min-width: 350px) {

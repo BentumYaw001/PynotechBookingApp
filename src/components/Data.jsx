@@ -287,3 +287,48 @@ export const SpaNavItem = [
     path: <ReviewItem />,
   },
 ];
+
+import Sally from "/src/assets/images/specialist/img11.png";
+import Trudy from "/src/assets/images/specialist/img22.png";
+export const SpecialistData = [
+  {
+    img: Sally,
+    rating: "4.8",
+    name: "Sally Menz",
+    brand: "Hair Stylist",
+  },
+  {
+    img: Trudy,
+    rating: "4.0",
+    name: "Trudy Sulley",
+    brand: "Nail Stylist",
+  },
+];
+
+import beard from "/src/assets/images/specialist/beard.png";
+import beauty from "/src/assets/images/specialist/beau.png";
+import color from "/src/assets/images/specialist/colo.png";
+import hair from "/src/assets/images/specialist/hair.png";
+import myhair from "/src/assets/images/specialist/myyyhair.png";
+import wash from "/src/assets/images/specialist/wash.png";
+export const Gallery = [
+  {
+    img: hair,
+  },
+  {
+    img: beard,
+  },
+  {
+    img: beauty,
+  },
+  {
+    img: color,
+  },
+  {
+    img: wash,
+  },
+
+  {
+    img: myhair,
+  },
+];
