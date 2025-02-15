@@ -239,7 +239,7 @@ export const SpaAddress = [
   },
   {
     img: phone,
-    title: "Phone",
+    title: "Call",
   },
   {
     img: direction,
@@ -248,5 +248,20 @@ export const SpaAddress = [
   {
     img: shareSpa,
     title: "Share",
+  },
+];
+
+export const SpaList = [
+  {
+    style: "Haircut",
+    type: "30 Types",
+  },
+  {
+    style: "Haircoloring",
+    type: "20 Types",
+  },
+  {
+    style: "Hairwash",
+    type: "12 Types",
   },
 ];

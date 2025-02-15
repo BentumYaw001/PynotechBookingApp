@@ -598,12 +598,75 @@ footer {
   margin: 15px auto;
   height: 30px;
 }
+
+.ProfileEdit,
+.Profile {
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
 /* Profile page ends here */
 
 /* book now page starts here */
+.Spa {
+  overflow: scroll;
+  height: 100vh;
+}
+
 .SpaIntro {
-  background-color: green;
-  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.SpaRating {
+  width: 100%;
+  position: relative;
+}
+
+.SpaCommons {
+  position: absolute;
+  z-index: 3;
+  bottom: 45px;
+  background-color: white;
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.Left {
+  left: 25px;
+}
+
+.Rights {
+  right: 70px;
+}
+
+.Right {
+  right: 25px;
+}
+.StoreImage {
+  width: 100%;
+}
+
+.SpaReview {
+  position: absolute;
+  gap: 5px;
+  bottom: -10px;
+  width: 170px;
+}
+
+.SpaName {
+  padding: 15px;
+  border-bottom: 1px solid hsl(0, 0%, 50%, 0.2);
+}
+
+.Spa p {
+  font-size: 0.8rem;
+  color: gray;
+}
+.SpaReview p {
+  color: white;
 }
 /* book now page ends here */
 

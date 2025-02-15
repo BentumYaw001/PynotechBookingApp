@@ -4,8 +4,10 @@ import ProfileDetails from "../components/ProfileDetails";
 function EditProfile() {
   return (
     <>
-      <PictureUpload />
-      <ProfileDetails />
+      <div className="ProfileEdit">
+        <PictureUpload />
+        <ProfileDetails />
+      </div>
     </>
   );
 }
