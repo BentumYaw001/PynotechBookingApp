@@ -63,4 +63,4 @@ export const useCurrentTimeStore = create((set) => ({
 
 setInterval(() => {
   useCurrentTimeStore.getState().updateTime();
-}, 2000);
+}, 10000);

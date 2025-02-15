@@ -171,6 +171,7 @@ import Payment from "/src/assets/images/minus-circle.svg";
 import Phone from "/src/assets/images/phone.svg";
 import Home from "/src/assets/images/home.svg";
 import BookNowPage from "../page/BookNow";
+
 export const ProfileMenuData = [
   {
     name: "Home",
@@ -219,5 +220,33 @@ export const UserData = [
     label: "Password",
     type: "password",
     entry: "Bentum Yaw Richmond",
+  },
+];
+
+import shareSpa from "/src/assets/images/telegram.svg";
+import direction from "/src/assets/images/direction-adjustment.svg";
+import website from "/src/assets/images/globe.svg";
+import message from "/src/assets/images/message.svg";
+import phone from "/src/assets/images/phone.svg";
+export const SpaAddress = [
+  {
+    img: website,
+    title: "Website",
+  },
+  {
+    img: message,
+    title: "Message",
+  },
+  {
+    img: phone,
+    title: "Phone",
+  },
+  {
+    img: direction,
+    title: "Direction",
+  },
+  {
+    img: shareSpa,
+    title: "Share",
   },
 ];

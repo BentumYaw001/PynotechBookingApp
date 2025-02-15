@@ -600,6 +600,13 @@ footer {
 }
 /* Profile page ends here */
 
+/* book now page starts here */
+.SpaIntro {
+  background-color: green;
+  overflow-y: scroll;
+}
+/* book now page ends here */
+
 @media (min-width: 350px) {
   .Prefix {
     flex-basis: 40%;

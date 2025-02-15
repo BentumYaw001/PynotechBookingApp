@@ -1,5 +1,11 @@
+import SpaIntro from "../components/SpaIntro";
+
 function BookNowPage() {
-  return <>welcome to book now page</>;
+  return (
+    <>
+      <SpaIntro />
+    </>
+  );
 }
 
 export default BookNowPage;
