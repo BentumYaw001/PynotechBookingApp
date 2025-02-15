@@ -265,3 +265,26 @@ export const SpaList = [
     type: "12 Types",
   },
 ];
+
+export const SpaNavItem = [
+  {
+    name: "Services",
+    route: "",
+  },
+  {
+    name: "Specialist",
+    route: "",
+  },
+  {
+    name: "Package",
+    route: "",
+  },
+  {
+    name: "Gallery",
+    route: "",
+  },
+  {
+    name: "Review",
+    route: "",
+  },
+];
