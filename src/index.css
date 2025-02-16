@@ -2,6 +2,13 @@
   margin: 0;
 }
 
+.Icons:has(input:not(:placeholder-shown)):has(input:valid) {
+  border: 1px solid green;
+}
+
+.Icons:has(input:not(:placeholder-shown)):has(input:invalid) {
+  border: 1px solid red;
+}
 .App {
   min-width: 280px;
   width: 100%;

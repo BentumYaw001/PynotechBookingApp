@@ -36,12 +36,13 @@ function SignUp() {
                         </div>
 
                         <div className="Icons Suffix">
-                          <img src="" alt="" />
                           <input
                             type="number"
                             name="suffix"
                             id=""
                             placeholder="1234567"
+                            max="999999999"
+                            required
                           />
                         </div>
                       </div>
@@ -57,6 +58,7 @@ function SignUp() {
                         name={item.name}
                         id={item.id}
                         placeholder={item.placeholder}
+                        required
                       />
                     </div>
                   </>
