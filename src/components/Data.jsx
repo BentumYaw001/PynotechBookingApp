@@ -332,3 +332,35 @@ export const Gallery = [
     img: myhair,
   },
 ];
+
+import Avar from "/src/assets/images/specialist/re.png";
+import Evans from "/src/assets/images/specialist/re 3.png";
+export const ReviewData = [
+  {
+    img: Avar,
+    name: "Ava",
+    message: "I really enjoyed your service.",
+  },
+  {
+    img: Evans,
+    name: "Evans",
+    message: "They did a wonderfull job for me",
+  },
+];
+
+export const FiveData = "/src/assets/images/star.svg";
+
+export const PackageData = [
+  {
+    img: hair,
+    title: "Haircut and Hairstyle",
+    message: "Special offer available, valid until Feb 15, 2025",
+    price: "50",
+  },
+  {
+    img: beauty,
+    title: "Beauty Makeup",
+    message: "Special offer available, valid until Feb 15, 2025",
+    price: "150",
+  },
+];
