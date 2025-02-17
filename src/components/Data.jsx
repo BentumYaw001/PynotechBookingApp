@@ -348,8 +348,6 @@ export const ReviewData = [
   },
 ];
 
-export const FiveData = "/src/assets/images/star.svg";
-
 export const PackageData = [
   {
     img: hair,
