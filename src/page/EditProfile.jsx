@@ -1,5 +1,6 @@
 import PictureUpload from "../components/PictureUpload";
 import ProfileDetails from "../components/ProfileDetails";
+import UploadModal from "../components/UploadModal";
 
 function EditProfile() {
   return (
@@ -7,6 +8,7 @@ function EditProfile() {
       <div className="ProfileEdit">
         <PictureUpload />
         <ProfileDetails />
+        <UploadModal />
       </div>
     </>
   );

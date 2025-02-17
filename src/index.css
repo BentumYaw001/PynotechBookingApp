@@ -833,6 +833,31 @@ footer {
 }
 /* book now page ends here */
 
+/* Upload Modal starts here */
+.Modal {
+  background-color: hsl(174, 100%, 29%);
+  border-radius: 15px;
+  border-bottom-left-radius: 1px;
+  position: absolute;
+  z-index: 5;
+  top: 72px;
+  right: 22px;
+  width: 120px;
+  text-align: center;
+  color: white;
+}
+.Update {
+  border-bottom: 1px solid white;
+}
+.Modal p {
+  cursor: pointer;
+  padding: 5px;
+}
+.Hidden {
+  display: none;
+}
+/* Upload Modal ends here */
+
 @media (min-width: 350px) {
   .Prefix {
     flex-basis: 40%;

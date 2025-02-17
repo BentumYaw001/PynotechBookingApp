@@ -1,12 +1,15 @@
 import { create } from "zustand";
 import ProfilePic from "/src/assets/images/specialist/portfolio picture.jpg";
+
 export const useSplashStore = create((set) => ({
   loading: true,
   setLoading: (value) => set({ loading: value }),
 }));
 
-export const UseProfileStore = create(() => ({
+export const useProfileStore = create((set) => ({
   ProfileImage: ProfilePic,
+  setProfileImage: (image) => set({ ProfileImage: image }),
+  deleteImage: () => set({ profileImage: null }),
 }));
 
 export const useCurrentTimeStore = create((set) => ({
@@ -68,4 +71,11 @@ setInterval(() => {
 export const useSpaStore = create((set) => ({
   activeComponent: "A",
   setActiveComponent: (id) => set({ activeComponent: id }),
+}));
+
+export const useModalStore = create((set) => ({
+  isOpen: false,
+  openModal: () => set({ isOpen: true }),
+  closeModal: () => set({ isOpen: false }),
+  toggleModal: () => set((state) => ({ isOpen: !state.isOpen })),
 }));

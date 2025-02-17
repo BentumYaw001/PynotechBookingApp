@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { UseProfileStore } from "../page/Store";
+import { useProfileStore } from "../page/Store";
 
 function ProfileEdit() {
   const navigate = useNavigate();
-  const { ProfileImage } = UseProfileStore();
+  const { ProfileImage } = useProfileStore();
   return (
     <>
       <div className="EditSection">

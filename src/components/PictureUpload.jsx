@@ -1,8 +1,9 @@
-import { UseProfileStore } from "../page/Store";
+import { useModalStore, useProfileStore } from "../page/Store";
 import Camera from "/src/assets/images/camera.svg";
 
 function PictureUpload() {
-  const { ProfileImage } = UseProfileStore();
+  const { ProfileImage } = useProfileStore();
+  const { toggleModal } = useModalStore();
 
   return (
     <>
@@ -12,7 +13,12 @@ function PictureUpload() {
           <div className="ProfilePicture">
             <img src={ProfileImage} alt="" />
           </div>
-          <img src={Camera} alt="" className="ProfileCamera" />
+          <img
+            src={Camera}
+            alt=""
+            className="ProfileCamera"
+            onClick={toggleModal}
+          />
         </div>
       </div>
     </>
