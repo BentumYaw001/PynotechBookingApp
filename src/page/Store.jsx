@@ -79,3 +79,10 @@ export const useModalStore = create((set) => ({
   closeModal: () => set({ isOpen: false }),
   toggleModal: () => set((state) => ({ isOpen: !state.isOpen })),
 }));
+
+export const useCountryStore = create((set) => ({
+  countries: [],
+  selectedCountry: null,
+  setCountries: (countries) => set({ countries }),
+  setSelectedCountry: (selectedCountry) => set({ selectedCountry }),
+}));

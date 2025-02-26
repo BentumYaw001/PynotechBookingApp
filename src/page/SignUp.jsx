@@ -1,10 +1,12 @@
+import CountryDropdown from "../components/CountryCode";
 import { SignUpData } from "../components/Data";
 import angledDown from "/src/assets/images/down-filled.svg";
-import flag from "/src/assets/images/flag-ghana.svg";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function SignUp() {
   const navigate = useNavigate();
+
   return (
     <>
       <div className="SignUp">
@@ -24,15 +26,7 @@ function SignUp() {
                       <label htmlFor="Phone Number">Phone No.</label>
                       <div className="Phone">
                         <div className="Icons Prefix">
-                          <img src={flag} alt="" />
-                          <input
-                            type="number"
-                            name="prefix"
-                            id=""
-                            placeholder="+233"
-                            readOnly
-                          />
-                          <img src={angledDown} alt="" className="ArrowDown" />
+                          <CountryDropdown />
                         </div>
 
                         <div className="Icons Suffix">
@@ -40,7 +34,7 @@ function SignUp() {
                             type="number"
                             name="suffix"
                             id=""
-                            placeholder="1234567"
+                            placeholder="552193214"
                             max="999999999"
                             required
                           />

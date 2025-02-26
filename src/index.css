@@ -108,6 +108,24 @@ button {
 /* ScreenOne ends here */
 
 /* SignUp starts here */
+
+select {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  order: 2;
+  margin-left: 2px;
+  margin-top: -7px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  scrollbar-width: none;
+}
+
+select::-webkit-scrollbar {
+  display: none;
+}
+
 .SignUp {
   background-color: white;
   height: 100vh;
@@ -136,23 +154,29 @@ button {
   margin-top: 10px;
 }
 
-.Phone .Prefix {
+.CountryCode {
   display: flex;
-  gap: 0px;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  min-width: 80px;
-  max-width: 85px;
-  padding: 0px;
+  text-align: center;
 }
 
-.Prefix img {
-  margin-right: -9px;
+.CountryCode img {
+  width: 25px;
+  height: 15px;
+}
+
+.Phone .Prefix {
+  min-width: 95px;
+  max-width: 100px;
 }
 .Phone .Suffix {
   width: 100%;
 }
 
+option {
+  text-align: center;
+}
 .Icons {
   background-color: hsl(174, 100%, 29%, 0.2);
   display: flex;
@@ -167,16 +191,7 @@ button {
 .Icons img {
   margin-left: 10px;
 }
-.ArrowDown {
-  position: absolute;
-  z-index: 5;
-  top: 11px;
-  right: 15px;
-  width: 17px;
-  height: 17px;
-  padding-left: 10px;
-  cursor: pointer;
-}
+
 input {
   border: none;
   outline: none;
