@@ -161,6 +161,14 @@ select::-webkit-scrollbar {
   text-align: center;
 }
 
+.placeholder:empty::before {
+  content: "+233";
+  color: gray;
+  margin-left: 20px;
+}
+.CountryCode p {
+  display: none;
+}
 .CountryCode img {
   width: 25px;
   height: 15px;

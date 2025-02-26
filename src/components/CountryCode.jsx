@@ -39,19 +39,27 @@ const CountryDropdown = () => {
   return (
     <div className="CountryCode">
       <select id="country" onChange={handleSelectChange}>
-        <option value="">N/A</option>
+        <option value="">Select a country</option>
         {countries.map((country) => (
           <option key={country.code} value={country.code}>
-            {country.callingCode}
+            {country.name} ({country.callingCode})
           </option>
         ))}
       </select>
 
-      {selectedCountry && (
-        <div>
-          <img src={selectedCountry.flag} width="30" height="20" alt="flag" />
-        </div>
-      )}
+      <div className="placeholder">
+        {selectedCountry && (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <img src={selectedCountry.flag} width="30" height="20" alt="flag" />
+            <span>{selectedCountry.callingCode}</span>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
