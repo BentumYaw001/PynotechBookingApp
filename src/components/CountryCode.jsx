@@ -13,7 +13,9 @@ const CountryDropdown = () => {
         const countryData = data.map((country) => ({
           name: country.name.common,
           code: country.cca3,
-          flag: country.flags.png,
+          flag:
+            country.flags?.svg ||
+            country.flags?.png.replace("http://", "https://"), // Prefer SVG, ensure HTTPS
           callingCode: country.idd?.root
             ? `${country.idd.root}${
                 country.idd.suffixes ? country.idd.suffixes[0] : ""
@@ -49,13 +51,17 @@ const CountryDropdown = () => {
 
       <div className="placeholder">
         {selectedCountry && (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <img src={selectedCountry.flag} width="30" height="20" alt="flag" />
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            {selectedCountry?.flag && (
+              <img
+                src={selectedCountry.flag}
+                width="30"
+                height="20"
+                alt="flag"
+                crossOrigin="anonymous"
+                onError={(e) => (e.target.style.display = "none")} // Hide broken images
+              />
+            )}
             <span>{selectedCountry.callingCode}</span>
           </div>
         )}
