@@ -48,22 +48,23 @@ const CountryDropdown = () => {
           </option>
         ))}
       </select>
-
       <div className="placeholder">
-        {selectedCountry && (
+        {selectedCountry ? (
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            {selectedCountry?.flag && (
+            {selectedCountry.flag && (
               <img
                 src={selectedCountry.flag}
                 width="30"
                 height="20"
                 alt="flag"
                 crossOrigin="anonymous"
-                onError={(e) => (e.target.style.display = "none")} // Hide broken images
+                onError={(e) => (e.target.style.display = "none")}
               />
             )}
             <span>{selectedCountry.callingCode}</span>
           </div>
+        ) : (
+          <span style={{ color: "gray", marginLeft: "20px" }}>+233</span>
         )}
       </div>
     </div>
